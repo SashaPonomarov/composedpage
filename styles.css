@@ -57,6 +57,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px; }
 
+strong {
+  font-weight: bold; }
+
 .header {
   max-width: 1280px;
   height: 48px;
@@ -192,5 +195,43 @@ body {
   .hero-purchase a {
     color: #0071e0;
     text-decoration: underline; }
+
+.subscribe {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  width: 100%;
+  background-color: #323a45;
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+  padding: 160px 0 145px; }
+  .subscribe h1 {
+    margin-bottom: 80px; }
+  .subscribe small {
+    font-size: 12px;
+    color: #747c83; }
+
+.subscribe-form {
+  max-width: 1320px;
+  margin: 0 auto 30px; }
+  .subscribe-form input, .subscribe-form button {
+    width: 280px;
+    height: 63px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 3px;
+    padding: 0 10px;
+    box-sizing: border-box; }
+  .subscribe-form input {
+    font-size: 18px; }
+  .subscribe-form button {
+    background-color: #ff3366;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 15px;
+    transition: background-color 0.3s ease-out; }
+    .subscribe-form button:hover {
+      background-color: #ff1a53; }
 
 /*# sourceMappingURL=styles.css.map */
