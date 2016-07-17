@@ -3,20 +3,30 @@
 <head>
     <meta charset="utf-8">
     <title>Composed Page For Internship at Ciklum</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <header class="header">
-        <a href="/" class="logo"></a>
         <nav role="navigation">
-            <ul>
-                <li>Store</li>
-                <li>Products</li>
-                <li>Support</li>
-            </ul>
+            <div class="header_left_wrapper">
+                <a href="/" class="header-logo"></a>
+                <ul class="header-menu">
+                    <li>Store
+                        <ul class="header-menu-sublist">
+                            <li>Store home
+                            <li>Devices
+                            <li>Software
+                        </ul>
+                    <li>Products
+                    <li>Support
+                </ul>
+            </div>
+            <div class="header_right_wrapper">
+                <input type="search" class="header-search" ></input>
+                <a href="/shopping_cart" class="header-cart"></a>
+                <a href="/sign_in" class="header-sign-in">Sign in</a>
+            </div>
         </nav>
-        <input type="search"></input>
-        <a href="/shopping_cart" class="shopping_cart"></a>
-        <a href="/sign_in" class="sign_in"></a>
     </header>
     <main></main>
     <footer></footer>
