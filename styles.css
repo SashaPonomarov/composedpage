@@ -234,4 +234,63 @@ strong {
     .subscribe-form button:hover {
       background-color: #ff1a53; }
 
+.special-offers {
+  width: 100%; }
+  .special-offers li:nth-of-type(1) .special-offers-bg-image {
+    background-image: url("img/eve-valkyrie.jpg"); }
+  .special-offers li:nth-of-type(2) .special-offers-bg-image {
+    background-image: url("img/luckys-tale.jpg"); }
+  .special-offers li:nth-of-type(3) .special-offers-bg-image {
+    background-image: url("img/oc3-stage-image.jpg"); }
+
+.special-offers-bg-image {
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.3;
+  transition: all 0.3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /*hack to prevent fickering of text on transform scale*/
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden; }
+
+a:hover .special-offers-bg-image {
+  transform: scale(1.1);
+  opacity: 0.8; }
+
+.special-offers-item {
+  background-color: #282828;
+  display: inline-block;
+  width: 33.3333%;
+  height: 300px;
+  position: relative;
+  overflow: hidden; }
+  .special-offers-item a {
+    height: 100%;
+    width: 100%;
+    display: inline-block; }
+  .special-offers-item h1, .special-offers-item h2 {
+    text-align: center; }
+  .special-offers-item h1 {
+    color: #ffffff;
+    font-size: 26px;
+    margin-top: 12px; }
+  .special-offers-item h2 {
+    text-transform: uppercase;
+    color: #a4a5a6;
+    font-size: 15px; }
+  .special-offers-item:hover {
+    background-size: 120%;
+    transition: all 0.3s; }
+
+.special-offers-wrapper {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
 /*# sourceMappingURL=styles.css.map */
