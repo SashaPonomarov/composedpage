@@ -14,17 +14,28 @@ $( document ).ready(function() {
         e.stopPropagation();
     })
     
-    $(document).click(
-            closeAllSubmenues()
-        )
+    $(document).click(function() {
+        closeAllSubmenues()
+    })
     
     $(document).keyup(function(e) {
-            if (e.keyCode == 27) closeAllSubmenues()
-        })
+        if (e.keyCode == 27) closeAllSubmenues()
+    })
 
     $(".header-menu-sublist").menuAim({
         activate: openSubmenu,
         deactivate: closeSubmenu
+    })
+
+    $(".header-menu-toggle").click(function(){
+        $(".header-menu").toggle()
+    })
+
+    $(".footer-menu-wrapper h1").click(function(){
+        if ($( window ).width() < 700) {
+            $( this ).parent().siblings("section").children("ul").hide()
+            $( this ).siblings("ul").toggle()
+        }
     })
 })
 

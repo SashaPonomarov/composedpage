@@ -107,6 +107,9 @@ strong {
     right: 10px;
     top: 20px; }
 
+.header-menu-toggle {
+  display: none; }
+
 .header-menu-sublist {
   transform: rotate(0deg);
   background-color: #f3f3f3;
@@ -177,7 +180,9 @@ strong {
 
 .hero-text-wrapper {
   max-width: 990px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box; }
 
 .hero-button {
   padding: 20px 30px;
@@ -220,7 +225,7 @@ strong {
     height: 63px;
     border-radius: 5px;
     border: none;
-    margin: 0 3px;
+    margin: 3px;
     padding: 0 10px;
     box-sizing: border-box; }
   .subscribe-form input {
@@ -301,7 +306,7 @@ a:hover .special-offers-bg-image {
   background-color: #f2f2f2; }
 
 .footer-wrapper {
-  width: 1024px;
+  max-width: 1024px;
   margin: 0 auto;
   padding: 30px 0; }
 
@@ -353,5 +358,72 @@ a:hover .special-offers-bg-image {
     position: absolute;
     left: -20px;
     top: -2px; }
+
+@media (max-width: 1024px) {
+  .hero {
+    height: 600px;
+    font-size: 18px;
+    background-position: right -300px center; }
+    .hero h1 {
+      font-size: 32px; } }
+@media (max-width: 880px) {
+  .hero {
+    height: 400px;
+    font-size: 16px;
+    background-size: cover; }
+    .hero h1 {
+      font-size: 24px;
+      padding: 20px 0; }
+    .hero h1, .hero p {
+      width: 300px; }
+    .hero .hero-purchase {
+      font-size: 13px; }
+
+  .header-menu, .header-search {
+    display: none; }
+
+  .header-menu-toggle {
+    height: 28px;
+    width: 32px;
+    background: url("img/menu-toggle.png") no-repeat;
+    display: inline-block;
+    margin-bottom: -6px;
+    cursor: pointer; }
+
+  .header-cart {
+    margin: 0 5px; }
+
+  .header-menu {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    height: 100%;
+    width: 70%; }
+    .header-menu li {
+      display: block; }
+
+  .header-menu-sublist {
+    position: static; } }
+@media (max-width: 700px) {
+  .special-offers-item {
+    width: 100%; }
+
+  .header-menu {
+    width: 100%; }
+
+  .footer {
+    font-size: 16px; }
+
+  .footer-menu-wrapper {
+    height: 100%; }
+    .footer-menu-wrapper section {
+      width: 100%;
+      margin: 0; }
+    .footer-menu-wrapper h1 {
+      cursor: pointer;
+      padding: 10px; }
+    .footer-menu-wrapper ul {
+      display: none;
+      padding: 0 10px; } }
 
 /*# sourceMappingURL=styles.css.map */
