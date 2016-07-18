@@ -124,6 +124,7 @@ strong {
   .header-menu-sublist .header-menu-sublist {
     left: 240px;
     top: 0;
+    bottom: 0;
     position: fixed;
     background-color: #e8e8e8; }
 
